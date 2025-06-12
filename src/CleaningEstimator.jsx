@@ -166,9 +166,7 @@ export default function CleaningCalculator() {
             />
           </div>
 
-          {[
-            "squareFeet", "bedrooms", "bathrooms", "kitchens", "diningRooms", "livingRooms", "offices", "closets", "laundryRooms"
-          ].map((field) => (
+          {["squareFeet", "bedrooms", "bathrooms", "kitchens", "diningRooms", "livingRooms", "offices", "closets", "laundryRooms"].map((field) => (
             <div key={field} className="mb-2">
               <label className="capitalize">{field.replace(/([A-Z])/g, ' $1')}:</label>
               {field === "squareFeet" ? (
@@ -244,4 +242,3 @@ export default function CleaningCalculator() {
     </div>
   );
 }
-
