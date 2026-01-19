@@ -95,10 +95,10 @@ export default function CleaningCalculator() {
     if (form.pets) weekly += 5;
     if (form.kids) weekly += 5;
 
-    if (form.propertyType !== "apartment" && !form.basement) {
-  if (form.squareFeet <= 2500) weekly -= 30;
-  else if (form.squareFeet <= 5000) weekly -= 50;
-  else weekly -= 80;
+     if (form.propertyType !== "apartment" && !form.basement) {
+  if (form.squareFeet <= 2500) weekly -= 20;
+  else if (form.squareFeet <= 5000) weekly -= 30;
+  else weekly -= 40;
 }
 
     if (form.oven) weekly += 30;
